@@ -220,7 +220,7 @@ for ($i=0; $i<count( $post) ; $i++) {
             <form action="./Desactiver.php" method='POST'>
             <input type='checkbox' name='desactivea' value='on' unchecked>
             <input type="hidden" id="postId" name="postId" value="<?php echo  $post[$i]['ID']?>">
-            <input type="submit" value="Désactiver"name="submit"> 
+            <input type="submit" value="Désactiver"name="submit" class="bouton"> 
             </form>
             </div>
             <div class="social">
