@@ -45,7 +45,7 @@ VALUES (
    './images/" . $_POST['avatar'] . "',
    '".$_POST['post-date'] . "',
    './images/" . $_POST['post-img'] . "',
-   '".$_POST['titre']."', 
+   '".htmlentities($_POST['titre'])."', 
    '".$_POST['nolikes']."', 
    '".$_POST['nocom']."',
    '" . htmlentities( $_POST['post-text'])  . "',
@@ -56,7 +56,7 @@ VALUES (
  /*  var_dump($requete_sql)  ;*/
 $result = $mysqli->query($requete_sql);
 if ($result) {
-  printf("<p class='success'>Ajout du post effectué avec succès.</p><br />");
+  printf("<p id='success'>Ajout du post effectué avec succès.</p><br />");
   $mysqli->close();
 }
 
@@ -107,7 +107,7 @@ if ($result) {
       
         </div>
         <div class="response-message">
-        <p class="bouton">
+        <p id="bouton">
         <input type="submit" value="Envoyez votre article" name="submit">
         </p>
         </div>

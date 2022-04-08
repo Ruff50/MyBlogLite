@@ -100,7 +100,9 @@
             <div class="TitreArt">
             <p class="titre"><?php echo  $post[0]["titreart"]?></a></p>
             </div>
+            <div id="img2">
             <?php  
+
             if( $post[0]["image_article"] == '') 
             {
                 echo '<br>' ;
@@ -109,7 +111,7 @@
                 echo '<img src="'.  $post[0]["image_article"].'" alt="post_img" class="post-img"> ';
             }
            ?>
-
+            </div>
             <p class="post-text"><?php echo  $post[0]["post_text"]?></p>
             <div class="social">
                 <p class="like"><span class="icon-thumbs-up-alt"></span><?php echo ' '.  $post[0]["polike"]?></p>
