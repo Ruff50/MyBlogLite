@@ -23,7 +23,7 @@
   }
 
   // Selectionner des données
-  $requete_sql = "SELECT * FROM `Post` WHERE 1 ORDER BY post_time ASC;";
+  $requete_sql = "SELECT * FROM Post WHERE statut=0 ORDER BY post_time ASC;";
   $result = $mysqli->query($requete_sql);
 
   //Stocker les données
