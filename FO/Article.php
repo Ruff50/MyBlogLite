@@ -80,7 +80,7 @@
       <nav class="topbar-nav">
       <a href="#"></a>
       <a href="#"></a>
-      <a href="<?php echo $_SERVER['HTTP_REFERER'];?>"><img width="60px" src="./images/back_arrow.png" alt="retour"/></a>
+      <a href="<?php echo $_SERVER['HTTP_REFERER'];?>" id="retour"><img width="60px" src="./images/back_arrow.png" alt="retour"/></a>
     </nav>
     
   </header>
