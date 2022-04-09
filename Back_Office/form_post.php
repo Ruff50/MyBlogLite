@@ -27,7 +27,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['post-text'])) {
  
-    echo "<p>Merci pour votre article</p>";
+  printf("<p id='success1'>Merci pour votre article</p>");
 
 
        // var_dump($_POST);

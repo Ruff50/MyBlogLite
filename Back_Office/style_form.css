@@ -69,7 +69,7 @@ justify-content: space-between;
 flex-direction: column;
 align-items: center;
 }
-#success{
+#success, #success1{
     color:white;
     font-size: 2em;
     background-color: black;

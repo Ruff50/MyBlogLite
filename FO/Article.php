@@ -112,7 +112,9 @@
             }
            ?>
             </div>
+            <div id="first">
             <p class="post-text"><?php echo  $post[0]["post_text"]?></p>
+            </div>
             <div class="social">
                 <p class="like"><span class="icon-thumbs-up-alt"></span><?php echo ' '.  $post[0]["polike"]?></p>
                 <p class="comment"><span class="icon-comment-alt"></span><?php echo ' '. $post[0]["comments"]?></p>

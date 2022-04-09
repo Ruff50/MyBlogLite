@@ -130,14 +130,23 @@ a:hover {
 
 }
 .post .post-text {
+  display: block;
   margin: 0px 25px 0px 40px;
   padding: 15px 80px;
   font-size: 16px;
   color:black;
   text-align: justify;
+  line-height: 1.9;
   width: 80%;
+  border-left: 18px solid maroon;
 }
-
+#first ::first-line {
+  display:block;
+  text-transform: uppercase;
+  font-size:20px;
+  color:rgb(255, 51, 0);
+  font-weight: bold;
+}
 .pseudo .title {
   font-size: 18px;
   font-weight: bold;
@@ -221,7 +230,7 @@ a:hover {
 
   .post .post-img {
     margin: auto;
-    width: 200px;
+    width: 80%;
   }
 
   #img2 {
