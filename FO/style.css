@@ -22,9 +22,11 @@
 body {
   padding: 0;
   margin: 0;
-  background:url("./images/bordo.png") ;
+  background:url("../images/bordo.png") fixed no-repeat top left,
+  url("../images/pexels-julius-silver-753626.jpg") fixed no-repeat center left,
+  url("../images/pexels-pixabay-210205.jpg") fixed no-repeat bottom left;
   background-size: cover;
-  background-position:top;*/
+  background-position:top;
   min-height: 100vh;
   color: rgba(0, 0, 0, 0.6);
   line-height: 1.3;

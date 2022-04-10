@@ -12,13 +12,13 @@
 <header class="topbar">
     <div class="margou">
       <div class="image">
-      <img width="120px"  onmouseout="this.src='./images/margouilla.png'; " onmouseover="this.src='./images/margouilla2.png'; " src="./images/margouilla.png"/> 
+      <img width="120px"  onmouseout="this.src='../images/margouilla.png'; " onmouseover="this.src='../images/margouilla2.png'; " src="../images/margouilla.png"/> 
     </div> 
   </div>    
       <nav class="topbar-nav">
       <a href="#"></a>
       <a href="#"></a>
-      <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>"><img width="60px" src="./images/back_arrow.png" alt="retour"></a>
+      <a href="<?php echo $_SERVER['HTTP_REFERER']; ?>"><img width="60px" src="../images/back_arrow.png" alt="retour"></a>
     </nav>
     
   </header>
@@ -42,9 +42,9 @@ if ($mysqli->connect_errno) {
 $requete_sql = "INSERT INTO `Post` ( `title`, `photo_avatar`, `post_time`,`image_article`,`titreart`, `polike`, `comments`, `post_text`, `statut`) 
 VALUES ( 
     '".$_POST['pseudo']."', 
-   './images/" . $_POST['avatar'] . "',
+   '../images/" . $_POST['avatar'] . "',
    '".$_POST['post-date'] . "',
-   './images/" . $_POST['post-img'] . "',
+   '../images/" . $_POST['post-img'] . "',
    '".htmlentities($_POST['titre'])."', 
    '".$_POST['nolikes']."', 
    '".$_POST['nocom']."',

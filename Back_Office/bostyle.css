@@ -19,10 +19,12 @@
 body {
   padding: 0;
   margin: 0;
-  background:url("./images/pexel.jpg") ;
-  background-size: cover;
+  background:url("../images/pexel.jpg") fixed no-repeat top left,
+             url("../images/pexels-julius-silver-753626.jpg") fixed no-repeat center left,
+             url("../images/pexels-pixabay-210205.jpg") fixed no-repeat bottom left;
+  background-size:cover;
   background-position:top;
-  /*background:url("./images/pexels_photo.jpg") ;
+ /* background:url("./images/pexels_photo.jpg") ;
   background-size: cover;
   background-position:top;*/
   min-height: 100vh;

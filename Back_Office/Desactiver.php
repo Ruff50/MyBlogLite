@@ -147,7 +147,7 @@ function getnbPost($mysqli)
   <header class="topbar">
     <div class="margou">
       <div class="image">
-     <img width="120px"  onmouseout="this.src='./images/margouilla.png'; " onmouseover="this.src='./images/margouilla2.png'; " src="./images/margouilla.png"/> 
+     <img width="120px"  onmouseout="this.src='../images/margouilla.png'; " onmouseover="this.src='../images/margouilla2.png'; " src="../images/margouilla.png"/> 
     </div> 
   </div>    
       <nav class="topbar-nav">
@@ -196,7 +196,7 @@ for ($i=0; $i<count( $post) ; $i++) {
         
             <div class="info-avatar">
             <?php
-            if( $post[$i]["photo_avatar"] == './images/') 
+            if( $post[$i]["photo_avatar"] == '../images/') 
             {
                 echo '<br>' ;
             }  else 

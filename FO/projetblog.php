@@ -86,7 +86,7 @@
   <header class="topbar">
     <div class="margou">
       <div class="image">
-     <img width="120px"  onmouseout="this.src='./images/margouilla.png'; " onmouseover="this.src='./images/margouilla2.png'; " src="./images/margouilla.png"/> 
+     <img width="120px"  onmouseout="this.src='../images/margouilla.png'; " onmouseover="this.src='../images/margouilla2.png'; " src="../images/margouilla.png"/> 
     </div> 
   </div>    
    <!--   <nav class="topbar-nav">
@@ -121,7 +121,7 @@ for ($i=0; $i<count( $post) ; $i++) {
             <p class="titre"><a id="under" href=<?php echo  './Article.php?id='.$post[$i]["id"]?>><?php echo  $post[$i]["titreart"]?></a></p>
             </div>
             <?php  
-            if( $post[$i]["image_article"] == '') 
+            if( $post[$i]["image_article"] == '../images/') 
             {
                 echo '<br>' ;
             }  else 
