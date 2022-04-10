@@ -208,7 +208,8 @@ for ($i=0; $i<count( $post) ; $i++) {
            
                 <div class="pseudo">
                 <p class="title"><?php echo  $post[$i]["title"]?></p>
-                    <p class="post-time">Article publié le <?php echo  $post[$i]["post_time"]?></p>
+                    <p class="post-time">Article publié le <?php $date= new DateTime($post[$i]["post_time"]);
+                                        echo $date->format('d/m/Y \à H:i:s');?></p>
                 </div>
                 
 

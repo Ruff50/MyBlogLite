@@ -107,6 +107,7 @@
 
 
 for ($i=0; $i<count( $post) ; $i++) {
+  
     ?>
         
         <div class="post">
@@ -114,7 +115,8 @@ for ($i=0; $i<count( $post) ; $i++) {
                 <img src=<?php echo  $post[$i]["photo_avatar"]?> alt="pseudo" class="avatar">
                 <div class="pseudo">
                 <p class="title"><?php echo  $post[$i]["title"]?></p>
-                    <p class="post-time"><?php echo  $post[$i]["post_time"]?></p>
+                    <p class="post-time"><?php $date= new DateTime($post[$i]["post_time"]);
+                    echo $date->format('d/m/Y'); //$post[$i]["post_time"]//?></p>
                 </div>
             </div>
             <div class="TitreArt">

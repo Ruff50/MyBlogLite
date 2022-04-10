@@ -94,7 +94,9 @@
                 <img src=<?php echo  $post[0]["photo_avatar"]?> alt="pseudo" class="avatar">
                 <div class="pseudo">
                 <p class="title"><?php echo  $post[0]["title"]?></p>
-                    <p class="post-time"><?php echo  $post[0]["post_time"]?></p>
+                    <p class="post-time"><?php $date= new DateTime($post[0]["post_time"]);
+                    echo $date->format('d/m/Y \à H:i:s');
+                    ?></p>
                 </div>
             </div>
             <div class="TitreArt">
